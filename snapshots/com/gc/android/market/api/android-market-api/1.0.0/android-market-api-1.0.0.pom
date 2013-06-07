@@ -37,7 +37,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!--  
 			<plugin>
 				<groupId>com.jakewharton</groupId>
 				<artifactId>github-deploy-maven-plugin</artifactId>
@@ -50,7 +49,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			-->
 		</plugins>
 	</build>
 	
