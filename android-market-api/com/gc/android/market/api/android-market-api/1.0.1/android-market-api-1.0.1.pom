@@ -43,6 +43,13 @@
 				</executions>
 			</plugin>
 			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					
+				</configuration>
+			</plugin>
+			<plugin>
 			    <artifactId>maven-deploy-plugin</artifactId>
 			    <version>2.7</version>
 			    <configuration>
@@ -82,54 +89,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <!-- 
-			<plugin>
-				<groupId>com.jakewharton</groupId>
-				<artifactId>github-deploy-maven-plugin</artifactId>
-				<version>1.0.1</version>
-				<executions>
-					<execution>
-						<id>default</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>deploy</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin> -->
-			<!-- 
-			<plugin>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.3.2</version>
-			    <configuration>
-			    	<finalName>${jar.name}</finalName>
-			        <archive>
-			            <manifest>
-			                <mainClass>com.chocopepper.test.crawl.Crawl</mainClass>
-			                <addClasspath>true</addClasspath>
-			                <classpathPrefix>${lib.dir}/</classpathPrefix>
-			            </manifest>
-			        </archive>
-			    </configuration>
-			</plugin>
-			<plugin>
-	            <groupId>org.apache.maven.plugins</groupId>
-	            <artifactId>maven-dependency-plugin</artifactId>
-	            <version>2.3</version>
-	            <executions>
-	                <execution>
-	                    <id>copy-dependencies</id>
-	                    <phase>package</phase>
-	                    <goals>
-	                        <goal>copy-dependencies</goal>
-	                    </goals>
-	                </execution>
-	            </executions>
-	            <configuration>
-	                <outputDirectory>target/${lib.dir}</outputDirectory>
-	                <overWriteIfNewer>true</overWriteIfNewer>
-	            </configuration>
-	        </plugin> -->
 		</plugins>
 	</build>
 	
